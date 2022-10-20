@@ -16,7 +16,7 @@ class CheckAuthenticated(APIView):
 
     def get(self, request, format=None):
         try:
-            is_authenticated = User.is_authenticated
+            is_authenticated = request.user.is_authenticated
 
             if is_authenticated:
                 return Response(
