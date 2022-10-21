@@ -1,2 +1,4 @@
 env
 *.pyc
+build
+db.sqlite3
